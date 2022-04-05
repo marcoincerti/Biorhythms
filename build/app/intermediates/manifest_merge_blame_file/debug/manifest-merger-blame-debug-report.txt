@@ -1,0 +1,666 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.marcoincerti.biorhythms"
+4    android:versionCode="7"
+5    android:versionName="1.5.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:3:5-66
+14-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:4:5-80
+15-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:4:22-78
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:5:5-66
+16-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:5:22-63
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:6:5-68
+17-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:6:22-65
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+18-->[:firebase_analytics] /Users/marcoincerti/biorhythms/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+18-->[:firebase_analytics] /Users/marcoincerti/biorhythms/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+19-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:5-82
+19-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:22-79
+20    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Android package visibility setting -->
+20-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:26:5-110
+20-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:26:22-107
+21    <queries>
+21-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:27:5-43:15
+22
+23        <!-- For browser content -->
+24        <intent>
+24-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:30:9-36:18
+25            <action android:name="android.intent.action.VIEW" />
+25-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:31:13-65
+25-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:31:21-62
+26
+27            <category android:name="android.intent.category.BROWSABLE" />
+27-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:33:13-74
+27-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:33:23-71
+28
+29            <data android:scheme="https" />
+29-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:35:13-44
+29-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:35:19-41
+30        </intent>
+31        <!-- End of browser content -->
+32        <!-- For CustomTabsService -->
+33        <intent>
+33-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:39:9-41:18
+34            <action android:name="android.support.customtabs.action.CustomTabsService" />
+34-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:40:13-90
+34-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:40:21-87
+35        </intent>
+36        <!-- End of CustomTabsService -->
+37    </queries> <!-- Permission will be merged into the manifest of the hosting app. -->
+38    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
+39    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+39-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:8:3-74
+39-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:8:20-72
+40
+41    <application
+41-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:7:4-49:19
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.3.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/9801ed4e6e95c6c75710a0e2f07ab40e/core-1.3.0/AndroidManifest.xml:24:18-86
+43        android:debuggable="true"
+44        android:extractNativeLibs="false"
+45        android:icon="@mipmap/ic_launcher"
+45-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:9:9-43
+46        android:label="Horoscope and Biorhythms" >
+46-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:8:9-49
+47        <activity
+47-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:10:9-40:20
+48            android:name="com.marcoincerti.biorhythms.MainActivity"
+48-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:11:13-41
+49            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+49-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:14:13-163
+50            android:hardwareAccelerated="true"
+50-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:15:13-47
+51            android:launchMode="singleTop"
+51-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:12:13-43
+52            android:showWhenLocked="true"
+52-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:17:13-42
+53            android:theme="@style/LaunchTheme"
+53-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:13:13-47
+54            android:turnScreenOn="true"
+54-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:18:13-40
+55            android:windowSoftInputMode="adjustResize" >
+55-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:16:13-55
+56
+57            <!--
+58                 Specifies an Android theme to apply to this Activity as soon as
+59                 the Android process has started. This theme is visible to the user
+60                 while the Flutter UI initializes. After that, this theme continues
+61                 to determine the Window background behind the Flutter UI.
+62            -->
+63            <meta-data
+63-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:23:13-26:17
+64                android:name="io.flutter.embedding.android.NormalTheme"
+64-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:24:15-70
+65                android:resource="@style/NormalTheme" />
+65-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:25:15-52
+66            <!--
+67                 Displays an Android View that continues showing the launch screen
+68                 Drawable until Flutter paints its first frame, then this splash
+69                 screen fades out. A splash screen is useful to avoid any visual
+70                 gap between the end of Android's launch screen and the painting of
+71                 Flutter's first frame.
+72            -->
+73            <meta-data
+73-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:32:13-35:17
+74                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+74-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:33:15-79
+75                android:resource="@drawable/launch_background" />
+75-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:34:15-61
+76
+77            <intent-filter>
+77-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:36:13-39:29
+78                <action android:name="android.intent.action.MAIN" />
+78-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:37:17-68
+78-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:37:25-66
+79
+80                <category android:name="android.intent.category.LAUNCHER" />
+80-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:38:17-76
+80-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:38:27-74
+81            </intent-filter>
+82        </activity>
+83        <!--
+84             Don't delete the meta-data below.
+85             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+86        -->
+87        <meta-data
+87-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:43:9-45:33
+88            android:name="flutterEmbedding"
+88-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:44:13-44
+89            android:value="2" />
+89-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:45:13-30
+90        <meta-data
+90-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:46:8-48:68
+91            android:name="com.google.android.gms.ads.APPLICATION_ID"
+91-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:47:12-68
+92            android:value="ca-app-pub-5115082725145746~6371806118" />
+92-->/Users/marcoincerti/biorhythms/android/app/src/main/AndroidManifest.xml:48:12-66
+93
+94        <service
+94-->[:firebase_analytics] /Users/marcoincerti/biorhythms/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-16:19
+95            android:name="com.google.firebase.components.ComponentDiscoveryService"
+95-->[:firebase_analytics] /Users/marcoincerti/biorhythms/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:12:18-89
+96            android:directBootAware="true"
+96-->[com.google.firebase:firebase-common:20.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/e8a5fff0fd6fb960db857cd6ff4c1236/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+97            android:exported="false" >
+97-->[com.google.firebase:firebase-perf:20.0.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/fef691cb24be4ca3e1cda2c13f117ef6/jetified-firebase-perf-20.0.1/AndroidManifest.xml:22:13-37
+98            <meta-data
+98-->[:firebase_analytics] /Users/marcoincerti/biorhythms/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:85
+99                android:name="com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar"
+99-->[:firebase_analytics] /Users/marcoincerti/biorhythms/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-127
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[:firebase_analytics] /Users/marcoincerti/biorhythms/build/firebase_analytics/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-82
+101            <meta-data
+101-->[:firebase_performance] /Users/marcoincerti/biorhythms/build/firebase_performance/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-13:85
+102                android:name="com.google.firebase.components:io.flutter.plugins.firebaseperformance.FlutterFirebaseAppRegistrar"
+102-->[:firebase_performance] /Users/marcoincerti/biorhythms/build/firebase_performance/intermediates/library_manifest/debug/AndroidManifest.xml:12:17-129
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[:firebase_performance] /Users/marcoincerti/biorhythms/build/firebase_performance/intermediates/library_manifest/debug/AndroidManifest.xml:13:17-82
+104            <meta-data
+104-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36:85
+105                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+105-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:35:17-128
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:36:17-82
+107            <meta-data
+107-->[:firebase_core] /Users/marcoincerti/biorhythms/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+108                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+108-->[:firebase_core] /Users/marcoincerti/biorhythms/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[:firebase_core] /Users/marcoincerti/biorhythms/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-perf:20.0.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/fef691cb24be4ca3e1cda2c13f117ef6/jetified-firebase-perf-20.0.1/AndroidManifest.xml:23:13-25:85
+111                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+111-->[com.google.firebase:firebase-perf:20.0.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/fef691cb24be4ca3e1cda2c13f117ef6/jetified-firebase-perf-20.0.1/AndroidManifest.xml:24:17-109
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-perf:20.0.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/fef691cb24be4ca3e1cda2c13f117ef6/jetified-firebase-perf-20.0.1/AndroidManifest.xml:25:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:52:13-54:85
+114                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+114-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:53:17-119
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:54:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/25dc92504668eed38f67756f7d4889a7/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+117                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+117-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/25dc92504668eed38f67756f7d4889a7/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/25dc92504668eed38f67756f7d4889a7/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-config:21.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1ed0d8d7c2a91bd8e0d321d577748b79/jetified-firebase-config-21.0.0/AndroidManifest.xml:32:13-34:85
+120                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+120-->[com.google.firebase:firebase-config:21.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1ed0d8d7c2a91bd8e0d321d577748b79/jetified-firebase-config-21.0.0/AndroidManifest.xml:33:17-117
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-config:21.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1ed0d8d7c2a91bd8e0d321d577748b79/jetified-firebase-config-21.0.0/AndroidManifest.xml:34:17-82
+122            <meta-data
+122-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/34541d6d17f1d78546c692a241dc4917/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:30:13-32:85
+123                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+123-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/34541d6d17f1d78546c692a241dc4917/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:31:17-139
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/34541d6d17f1d78546c692a241dc4917/jetified-play-services-measurement-api-19.0.0/AndroidManifest.xml:32:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-installations:17.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/cfe88608cc74195087cd36da03dd6873/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+126                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+126-->[com.google.firebase:firebase-installations:17.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/cfe88608cc74195087cd36da03dd6873/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-installations:17.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/cfe88608cc74195087cd36da03dd6873/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-abt:21.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7e69395a02de3b4d04bfebd7c12cf256/jetified-firebase-abt-21.0.0/AndroidManifest.xml:13:13-15:85
+129                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+129-->[com.google.firebase:firebase-abt:21.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7e69395a02de3b4d04bfebd7c12cf256/jetified-firebase-abt-21.0.0/AndroidManifest.xml:14:17-109
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-abt:21.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7e69395a02de3b4d04bfebd7c12cf256/jetified-firebase-abt-21.0.0/AndroidManifest.xml:15:17-82
+131        </service>
+132        <service
+132-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:72
+133            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+133-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-107
+134            android:exported="false"
+134-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+135            android:permission="android.permission.BIND_JOB_SERVICE" />
+135-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-69
+136        <service
+136-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-22:19
+137            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+137-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-97
+138            android:exported="false" >
+138-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+139            <intent-filter>
+139-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+140                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+140-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+140-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+141            </intent-filter>
+142        </service>
+143
+144        <receiver
+144-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-31:20
+145            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+145-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-98
+146            android:exported="true"
+146-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
+147            android:permission="com.google.android.c2dm.permission.SEND" >
+147-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-73
+148            <intent-filter>
+148-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+149                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+149-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+149-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+150            </intent-filter>
+151        </receiver>
+152
+153        <provider
+153-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-43:38
+154            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+154-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-102
+155            android:authorities="com.marcoincerti.biorhythms.flutterfirebasemessaginginitprovider"
+155-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-88
+156            android:exported="false"
+156-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
+157            android:initOrder="99" />
+157-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-35
+158
+159        <meta-data
+159-->[:google_mobile_ads] /Users/marcoincerti/biorhythms/build/google_mobile_ads/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-12:36
+160            android:name="io.flutter.embedded_views_preview"
+160-->[:google_mobile_ads] /Users/marcoincerti/biorhythms/build/google_mobile_ads/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-61
+161            android:value="true" />
+161-->[:google_mobile_ads] /Users/marcoincerti/biorhythms/build/google_mobile_ads/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-33
+162
+163        <activity
+163-->[:url_launcher] /Users/marcoincerti/biorhythms/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+164            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+164-->[:url_launcher] /Users/marcoincerti/biorhythms/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+165            android:exported="false"
+165-->[:url_launcher] /Users/marcoincerti/biorhythms/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+166            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+166-->[:url_launcher] /Users/marcoincerti/biorhythms/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+167
+168        <provider
+168-->[com.google.firebase:firebase-perf:20.0.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/fef691cb24be4ca3e1cda2c13f117ef6/jetified-firebase-perf-20.0.1/AndroidManifest.xml:14:9-18:39
+169            android:name="com.google.firebase.perf.provider.FirebasePerfProvider"
+169-->[com.google.firebase:firebase-perf:20.0.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/fef691cb24be4ca3e1cda2c13f117ef6/jetified-firebase-perf-20.0.1/AndroidManifest.xml:15:13-82
+170            android:authorities="com.marcoincerti.biorhythms.firebaseperfprovider"
+170-->[com.google.firebase:firebase-perf:20.0.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/fef691cb24be4ca3e1cda2c13f117ef6/jetified-firebase-perf-20.0.1/AndroidManifest.xml:16:13-72
+171            android:exported="false"
+171-->[com.google.firebase:firebase-perf:20.0.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/fef691cb24be4ca3e1cda2c13f117ef6/jetified-firebase-perf-20.0.1/AndroidManifest.xml:17:13-37
+172            android:initOrder="101" />
+172-->[com.google.firebase:firebase-perf:20.0.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/fef691cb24be4ca3e1cda2c13f117ef6/jetified-firebase-perf-20.0.1/AndroidManifest.xml:18:13-36
+173
+174        <receiver
+174-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:28:9-35:20
+175            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+175-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:29:13-78
+176            android:exported="true"
+176-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:30:13-36
+177            android:permission="com.google.android.c2dm.permission.SEND" >
+177-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:31:13-73
+178            <intent-filter>
+178-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+179                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+179-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+179-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+180            </intent-filter>
+181        </receiver>
+182        <!--
+183             FirebaseMessagingService performs security checks at runtime,
+184             but set to not exported to explicitly avoid allowing another app to call it.
+185        -->
+186        <service
+186-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:41:9-48:19
+187            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+187-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:42:13-82
+188            android:directBootAware="true"
+188-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:43:13-43
+189            android:exported="false" >
+189-->[com.google.firebase:firebase-messaging:22.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/1f00594675cb9290bca51ebbb1f993ab/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:44:13-37
+190            <intent-filter android:priority="-500" >
+190-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+191                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+191-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+191-->[:firebase_messaging] /Users/marcoincerti/biorhythms/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+192            </intent-filter>
+193        </service>
+194
+195        <provider
+195-->[com.google.firebase:firebase-common:20.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/e8a5fff0fd6fb960db857cd6ff4c1236/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+196            android:name="com.google.firebase.provider.FirebaseInitProvider"
+196-->[com.google.firebase:firebase-common:20.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/e8a5fff0fd6fb960db857cd6ff4c1236/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+197            android:authorities="com.marcoincerti.biorhythms.firebaseinitprovider"
+197-->[com.google.firebase:firebase-common:20.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/e8a5fff0fd6fb960db857cd6ff4c1236/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+198            android:directBootAware="true"
+198-->[com.google.firebase:firebase-common:20.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/e8a5fff0fd6fb960db857cd6ff4c1236/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+199            android:exported="false"
+199-->[com.google.firebase:firebase-common:20.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/e8a5fff0fd6fb960db857cd6ff4c1236/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+200            android:initOrder="100" />
+200-->[com.google.firebase:firebase-common:20.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/e8a5fff0fd6fb960db857cd6ff4c1236/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+201
+202        <receiver
+202-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:29:9-33:20
+203            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+203-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:30:13-85
+204            android:enabled="true"
+204-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:31:13-35
+205            android:exported="false" >
+205-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:32:13-37
+206        </receiver>
+207
+208        <service
+208-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:35:9-38:40
+209            android:name="com.google.android.gms.measurement.AppMeasurementService"
+209-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:36:13-84
+210            android:enabled="true"
+210-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:37:13-35
+211            android:exported="false" />
+211-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:38:13-37
+212        <service
+212-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:39:9-43:72
+213            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+213-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:40:13-87
+214            android:enabled="true"
+214-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:41:13-35
+215            android:exported="false"
+215-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:42:13-37
+216            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+216-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/198400750e3f8141cbf75d1aea0e358f/jetified-play-services-measurement-19.0.0/AndroidManifest.xml:43:13-69
+217        <activity
+217-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:48:9-52:64
+218            android:name="com.google.android.gms.ads.AdActivity"
+218-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:49:13-65
+219            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+219-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:50:13-122
+220            android:exported="false"
+220-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:51:13-37
+221            android:theme="@android:style/Theme.Translucent" />
+221-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:52:13-61
+222
+223        <provider
+223-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:54:9-58:39
+224            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+224-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:55:13-76
+225            android:authorities="com.marcoincerti.biorhythms.mobileadsinitprovider"
+225-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:56:13-73
+226            android:exported="false"
+226-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:57:13-37
+227            android:initOrder="100" />
+227-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:58:13-36
+228
+229        <service
+229-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:60:9-63:40
+230            android:name="com.google.android.gms.ads.AdService"
+230-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:61:13-64
+231            android:enabled="true"
+231-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:62:13-35
+232            android:exported="false" />
+232-->[com.google.android.gms:play-services-ads-lite:20.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/7b0d68efbc5f841c4c6e433b4a4fd3b4/jetified-play-services-ads-lite-20.1.0/AndroidManifest.xml:63:13-37
+233
+234        <meta-data
+234-->[com.google.android.gms:play-services-basement:17.6.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d604d577f6606c07991c28ad631b991a/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
+235            android:name="com.google.android.gms.version"
+235-->[com.google.android.gms:play-services-basement:17.6.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d604d577f6606c07991c28ad631b991a/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
+236            android:value="@integer/google_play_services_version" />
+236-->[com.google.android.gms:play-services-basement:17.6.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d604d577f6606c07991c28ad631b991a/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
+237
+238        <provider
+238-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:30:9-36:35
+239            android:name="androidx.work.impl.WorkManagerInitializer"
+239-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:31:13-69
+240            android:authorities="com.marcoincerti.biorhythms.workmanager-init"
+240-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:32:13-68
+241            android:directBootAware="false"
+241-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:33:13-44
+242            android:exported="false"
+242-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:34:13-37
+243            android:multiprocess="true" />
+243-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:35:13-40
+244
+245        <service
+245-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:38:9-43:35
+246            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+246-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:39:13-88
+247            android:directBootAware="false"
+247-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:40:13-44
+248            android:enabled="@bool/enable_system_alarm_service_default"
+248-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:41:13-72
+249            android:exported="false" />
+249-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:42:13-37
+250        <service
+250-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:44:9-50:35
+251            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+251-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:45:13-84
+252            android:directBootAware="false"
+252-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:46:13-44
+253            android:enabled="@bool/enable_system_job_service_default"
+253-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:47:13-70
+254            android:exported="true"
+254-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:48:13-36
+255            android:permission="android.permission.BIND_JOB_SERVICE" />
+255-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:49:13-69
+256
+257        <receiver
+257-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:52:9-57:35
+258            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+258-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:53:13-88
+259            android:directBootAware="false"
+259-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:54:13-44
+260            android:enabled="true"
+260-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:55:13-35
+261            android:exported="false" />
+261-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:56:13-37
+262        <receiver
+262-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:58:9-68:20
+263            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+263-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:59:13-106
+264            android:directBootAware="false"
+264-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:60:13-44
+265            android:enabled="false"
+265-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:61:13-36
+266            android:exported="false" >
+266-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:62:13-37
+267            <intent-filter>
+267-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:64:13-67:29
+268                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+268-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:65:17-87
+268-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:65:25-84
+269                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+269-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:66:17-90
+269-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:66:25-87
+270            </intent-filter>
+271        </receiver>
+272        <receiver
+272-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:69:9-79:20
+273            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+273-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:70:13-104
+274            android:directBootAware="false"
+274-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:71:13-44
+275            android:enabled="false"
+275-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:72:13-36
+276            android:exported="false" >
+276-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:73:13-37
+277            <intent-filter>
+277-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:75:13-78:29
+278                <action android:name="android.intent.action.BATTERY_OKAY" />
+278-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:76:17-77
+278-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:76:25-74
+279                <action android:name="android.intent.action.BATTERY_LOW" />
+279-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:77:17-76
+279-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:77:25-73
+280            </intent-filter>
+281        </receiver>
+282        <receiver
+282-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:80:9-90:20
+283            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+283-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:81:13-104
+284            android:directBootAware="false"
+284-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:82:13-44
+285            android:enabled="false"
+285-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:83:13-36
+286            android:exported="false" >
+286-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:84:13-37
+287            <intent-filter>
+287-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:86:13-89:29
+288                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+288-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:87:17-83
+288-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:87:25-80
+289                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+289-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:88:17-82
+289-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:88:25-79
+290            </intent-filter>
+291        </receiver>
+292        <receiver
+292-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:91:9-100:20
+293            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+293-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:92:13-103
+294            android:directBootAware="false"
+294-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:93:13-44
+295            android:enabled="false"
+295-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:94:13-36
+296            android:exported="false" >
+296-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:95:13-37
+297            <intent-filter>
+297-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:97:13-99:29
+298                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+298-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:98:17-79
+298-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:98:25-76
+299            </intent-filter>
+300        </receiver>
+301        <receiver
+301-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:101:9-112:20
+302            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+302-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:102:13-88
+303            android:directBootAware="false"
+303-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:103:13-44
+304            android:enabled="false"
+304-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:104:13-36
+305            android:exported="false" >
+305-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:105:13-37
+306            <intent-filter>
+306-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:107:13-111:29
+307                <action android:name="android.intent.action.BOOT_COMPLETED" />
+307-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:108:17-79
+307-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:108:25-76
+308                <action android:name="android.intent.action.TIME_SET" />
+308-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:109:17-73
+308-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:109:25-70
+309                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+309-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:110:17-81
+309-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:110:25-78
+310            </intent-filter>
+311        </receiver>
+312        <receiver
+312-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:113:9-122:20
+313            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+313-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:114:13-99
+314            android:directBootAware="false"
+314-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:115:13-44
+315            android:enabled="@bool/enable_system_alarm_service_default"
+315-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:116:13-72
+316            android:exported="false" >
+316-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:117:13-37
+317            <intent-filter>
+317-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:119:13-121:29
+318                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+318-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:120:17-98
+318-->[androidx.work:work-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/a4e376fb282597199c4b6d20647ec401/work-runtime-2.1.0/AndroidManifest.xml:120:25-95
+319            </intent-filter>
+320        </receiver>
+321
+322        <service
+322-->[androidx.room:room-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/b8e650e388a75cf67ee353eb418362c1/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+323            android:name="androidx.room.MultiInstanceInvalidationService"
+323-->[androidx.room:room-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/b8e650e388a75cf67ee353eb418362c1/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+324            android:exported="false" />
+324-->[androidx.room:room-runtime:2.1.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/b8e650e388a75cf67ee353eb418362c1/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+325        <service
+325-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/37b89d62a13da1d3f9b88fdc44f91b72/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+326            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+326-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/37b89d62a13da1d3f9b88fdc44f91b72/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+327            android:exported="false" >
+327-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/37b89d62a13da1d3f9b88fdc44f91b72/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+328            <meta-data
+328-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/37b89d62a13da1d3f9b88fdc44f91b72/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+329                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+329-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/37b89d62a13da1d3f9b88fdc44f91b72/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+330                android:value="cct" />
+330-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/37b89d62a13da1d3f9b88fdc44f91b72/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+331        </service>
+332        <service
+332-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/75378bfbb253386ee17bbe83984986fe/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+333            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+333-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/75378bfbb253386ee17bbe83984986fe/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+334            android:exported="false"
+334-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/75378bfbb253386ee17bbe83984986fe/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+335            android:permission="android.permission.BIND_JOB_SERVICE" >
+335-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/75378bfbb253386ee17bbe83984986fe/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+336        </service>
+337
+338        <receiver
+338-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/75378bfbb253386ee17bbe83984986fe/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+339            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+339-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/75378bfbb253386ee17bbe83984986fe/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+340            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+340-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/75378bfbb253386ee17bbe83984986fe/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+341        <activity
+341-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:12:5-271
+342            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+342-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:12:15-102
+343            android:enabled="false"
+343-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:12:103-126
+344            android:exported="false"
+344-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:12:127-151
+345            android:launchMode="singleInstance"
+345-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:12:204-239
+346            android:process=":playcore_missing_splits_activity"
+346-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:12:152-203
+347            android:stateNotNeeded="true" />
+347-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:12:240-269
+348        <activity
+348-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:13:5-226
+349            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+349-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:13:15-95
+350            android:enabled="false"
+350-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:13:96-119
+351            android:exported="false"
+351-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:13:120-144
+352            android:stateNotNeeded="true"
+352-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:13:145-174
+353            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+353-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:13:175-224
+354        <service
+354-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:16:5-18:15
+355            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+355-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:16:14-95
+356            android:enabled="false"
+356-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:16:96-119
+357            android:exported="true" >
+357-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:16:120-143
+358            <meta-data
+358-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:17:7-108
+359                android:name="com.google.android.play.core.assetpacks.versionCode"
+359-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:17:18-84
+360                android:value="10901" />
+360-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:17:85-106
+361        </service>
+362        <service
+362-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:19:5-147
+363            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+363-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:19:14-96
+364            android:enabled="false"
+364-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:19:97-120
+365            android:exported="false" />
+365-->[com.google.android.play:core:1.9.1] /Users/marcoincerti/.gradle/caches/transforms-2/files-2.1/d3c33f4ca9948e017fce2acbd0d28cac/jetified-core-1.9.1/AndroidManifest.xml:19:121-145
+366    </application>
+367
+368</manifest>

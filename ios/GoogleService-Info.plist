@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>470024449219-k6pp8mqi11es3ngufv8s8n1ehe2c9tp4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.470024449219-k6pp8mqi11es3ngufv8s8n1ehe2c9tp4</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>470024449219-29snvochoedt9c45ctcho6pc33p6ee86.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBIdDgQk24AewT_hO8Vinjlcl8qLxA5IUM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>470024449219</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.incertimarco.biorhythms</string>
+	<key>PROJECT_ID</key>
+	<string>biorhythms-and-horoscope</string>
+	<key>STORAGE_BUCKET</key>
+	<string>biorhythms-and-horoscope.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:470024449219:ios:193f0a3e685fc4b5f48676</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-5115082725145746~5203028826</string>
+</dict>
+</plist>

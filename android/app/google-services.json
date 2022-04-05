@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "470024449219",
+    "project_id": "biorhythms-and-horoscope",
+    "storage_bucket": "biorhythms-and-horoscope.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470024449219:android:18c942dbe0984b83f48676",
+        "android_client_info": {
+          "package_name": "com.marcoincerti.biorhythms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470024449219-r3ctctjvejk5i4ptd5jjbiqbd1du3m41.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqJo-eO6qcMbggE5HHf0jm-_JOfjqzvvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470024449219-r3ctctjvejk5i4ptd5jjbiqbd1du3m41.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "470024449219-uktjfbgidfsb8e1js36uf0t327irnjid.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.biorhythms"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

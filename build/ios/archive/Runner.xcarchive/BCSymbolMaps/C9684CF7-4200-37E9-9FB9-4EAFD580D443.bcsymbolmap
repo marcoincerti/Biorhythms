@@ -1,0 +1,83 @@
+BCSymbolMap Version: 2.0
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk
+iPhoneOS14.5.sdk
+/Users/marcoincerti/Library/Developer/Xcode/DerivedData/Runner-balaxygrrscuqvcizzjzjkaquseq/Build/Intermediates.noindex/ArchiveIntermediates/Runner/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/in_app_review.build/DerivedSources/in_app_review_vers.c
+/Users/marcoincerti/biorhythms/ios/Pods
+__OBJC_METACLASS_RO_$_PodsDummy_in_app_review
+__OBJC_CLASS_RO_$_PodsDummy_in_app_review
+/Users/marcoincerti/biorhythms/ios/Pods/Target Support Files/in_app_review/in_app_review-dummy.m
++[InAppReviewPlugin registerWithRegistrar:]
+-[InAppReviewPlugin handleMethodCall:result:]
+-[InAppReviewPlugin requestReview:]
+-[InAppReviewPlugin findActiveScene]
+-[InAppReviewPlugin isAvailable:]
+-[InAppReviewPlugin openStoreListingWithStoreId:result:]
+-[InAppReviewPlugin logMessage:]
+-[InAppReviewPlugin logMessage:details:]
+___clang_at_available_requires_core_foundation_framework
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_CLASSLIST_REFERENCES_$_.3
+_OBJC_SELECTOR_REFERENCES_.5
+_OBJC_SELECTOR_REFERENCES_.7
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_SELECTOR_REFERENCES_.13
+_OBJC_SELECTOR_REFERENCES_.17
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.23
+_OBJC_SELECTOR_REFERENCES_.27
+_OBJC_SELECTOR_REFERENCES_.29
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_SELECTOR_REFERENCES_.37
+_OBJC_CLASSLIST_REFERENCES_$_.40
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_CLASSLIST_REFERENCES_$_.45
+_OBJC_SELECTOR_REFERENCES_.51
+_OBJC_SELECTOR_REFERENCES_.55
+_OBJC_CLASSLIST_REFERENCES_$_.60
+_OBJC_SELECTOR_REFERENCES_.62
+_OBJC_SELECTOR_REFERENCES_.64
+_OBJC_SELECTOR_REFERENCES_.66
+_OBJC_SELECTOR_REFERENCES_.68
+_OBJC_CLASSLIST_REFERENCES_$_.71
+_OBJC_SELECTOR_REFERENCES_.73
+_OBJC_CLASSLIST_REFERENCES_$_.78
+_OBJC_CLASSLIST_REFERENCES_$_.79
+_OBJC_SELECTOR_REFERENCES_.83
+_OBJC_SELECTOR_REFERENCES_.85
+_OBJC_SELECTOR_REFERENCES_.91
+_OBJC_SELECTOR_REFERENCES_.93
+__OBJC_$_CLASS_METHODS_InAppReviewPlugin
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+__OBJC_$_PROP_LIST_NSObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_$_PROTOCOL_REFS_UNUserNotificationCenterDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UNUserNotificationCenterDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UNUserNotificationCenterDelegate
+__OBJC_PROTOCOL_$_UNUserNotificationCenterDelegate
+__OBJC_LABEL_PROTOCOL_$_UNUserNotificationCenterDelegate
+__OBJC_$_PROTOCOL_REFS_FlutterApplicationLifeCycleDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_FlutterApplicationLifeCycleDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_FlutterApplicationLifeCycleDelegate
+__OBJC_PROTOCOL_$_FlutterApplicationLifeCycleDelegate
+__OBJC_LABEL_PROTOCOL_$_FlutterApplicationLifeCycleDelegate
+__OBJC_$_PROTOCOL_REFS_FlutterPlugin
+__OBJC_$_PROTOCOL_CLASS_METHODS_FlutterPlugin
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_FlutterPlugin
+__OBJC_$_PROTOCOL_CLASS_METHODS_OPT_FlutterPlugin
+__OBJC_$_PROTOCOL_METHOD_TYPES_FlutterPlugin
+__OBJC_PROTOCOL_$_FlutterPlugin
+__OBJC_LABEL_PROTOCOL_$_FlutterPlugin
+__OBJC_CLASS_PROTOCOLS_$_InAppReviewPlugin
+__OBJC_METACLASS_RO_$_InAppReviewPlugin
+__OBJC_$_INSTANCE_METHODS_InAppReviewPlugin
+__OBJC_$_PROP_LIST_InAppReviewPlugin
+__OBJC_CLASS_RO_$_InAppReviewPlugin
+/Users/marcoincerti/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/in_app_review-2.0.2/ios/Classes/InAppReviewPlugin.m
+Developer/flutter/.pub-cache/hosted/pub.dartlang.org/in_app_review-2.0.2/ios/Classes/InAppReviewPlugin.m
+/Users/marcoincerti
