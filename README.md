@@ -21,4 +21,4 @@ You can also read your daily horoscope that will tell us:
 - the sign with which we are most loving
 - our favorite color
 
-- [Google Play]
+Google Play
