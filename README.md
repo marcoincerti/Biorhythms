@@ -1,16 +1,24 @@
-# biorhythms
+# Biorhythms
 
-A new Flutter project.
+This app allows you to find out if it’s your ideal day with an always look.
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+Added the "Happens Today" section to know all the knowledge chips that have happened in the past. What are you waiting for? Add a new you today!
 
-A few resources to get you started if this is your first Flutter project:
+Every day new scores are calculated by AI and a new daily horoscope.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+This app lets you find out if it’s your ideal day with an ever-looking look.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+It is based on your biorhythms calculated by artificial intelligence, finding every day your values accurate to the thousandth.
+Intro gives you a score of 0 to 10 to make you understand if this will be a good day.
+
+You can also read your daily horoscope that will tell us:
+- A brief description of our day
+- our mood
+- our lucky hours
+- our lucky number
+- the sign with which we are most loving
+- our favorite color
+
+- [Google Play]
